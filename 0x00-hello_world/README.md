@@ -1,1 +1,1 @@
-scond readme.md
+my readme.md
