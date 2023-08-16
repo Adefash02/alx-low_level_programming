@@ -1,9 +1,11 @@
 #include "main.h"
+
 /**
 *main - Entry point
 *Description: 'print _puthchar to stdout'
 *Return: always 0 (SUCCESS)
 */
+
 int main(void)
 {
 	_putchar('_');
