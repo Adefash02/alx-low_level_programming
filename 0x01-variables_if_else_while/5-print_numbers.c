@@ -1,19 +1,19 @@
 #include <stdio.h>
+#include <unistd.h>
 
 /**
-* main - case for lower and upper
-* Return: Always 0.
+* main - Entry point
+* Description: prints char below 10
+* Return: Always 0 (success)
 */
 
 int main(void)
 {
-char upper;
-for (upper = 'a'; upper <= 'z'; upper++)
+int a;
+for (a = 0; a < 10; a++)
 {
-if (upper != 'e' && upper != 'q')
-putchar(upper);
+putchar(a + '0');
 }
-
 putchar('\n');
 
 return (0);
