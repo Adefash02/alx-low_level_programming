@@ -1,10 +1,9 @@
 #include <stdlib.h>
 #include <time.h>
 #include <stdio.h>
-
 /**
 * main - This is a function
-* Return: number to be generated
+* return: Number shoul be generated
 */
 /* more headers goes there */
 
@@ -20,15 +19,15 @@ int main(void)
 	m = n % 10;
 	if (m > 5)
 	{
-	printf("last digit of %d is %d and is greater than 5\n", n, m);
+	printf("last digit is %d is %d and is greater than 5\n", n, m);
 	}
 	else if (m < 6 && m != 0)
 	{
-	printf("last digit of %s is %d and is less than 6 but not 0\n", n, m);
+	printf("last digit is %d is %d and is less than 6 but not 0\n", n, m);
 	}
 	else
 	{
-	printf("last digit of %d is %d and is 0\n", n, m);
+	printf("last digit is %d is %d and is 0\n", n, m);
 	}
-	return  (0);
+	return (0);
 }
