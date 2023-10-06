@@ -3,7 +3,7 @@
 #include <stdio.h>
 /**
 * main - This is a function
-* return: Number shoul be generated
+* Return: number to be generated
 */
 /* more headers goes there */
 
