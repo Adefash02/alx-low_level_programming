@@ -3,6 +3,7 @@
 #include <stdio.h>
 /**
 * main - This is a function
+* Description: checks on the last digit of the assigned var
 * Return: number to be generated
 */
 /* more headers goes there */
