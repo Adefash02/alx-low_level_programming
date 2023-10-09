@@ -1,7 +1,8 @@
-#include<stdio.h>
+#include <stdio.h>
+
 /**
- *Main - this is printf function
- *return: always 0 (SUCCESS)
+*Main - this is printf function
+*Return: always 0 (SUCCESS)
 */
 
 int main(void)
