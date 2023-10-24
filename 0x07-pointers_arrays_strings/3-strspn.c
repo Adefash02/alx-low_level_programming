@@ -1,21 +1,9 @@
 #include "main.h"
 /**
  * _strspn - function name
- * @c: parameter for c
- * @s: parameter for s
- * Return: return c
+ * @s: parameter one for s
+ * @accept: parameter two for acception
+ * Return: character counted
  */
 unsigned int _strspn(char *s, char *accept)
 {
-	while (*s != '\o')
-	{
-		if (*s == c)
-			return (s);
-		s++;
-	}
-
-	if (*s == c)
-		return (s);
-	return (NULL);
-}
-
