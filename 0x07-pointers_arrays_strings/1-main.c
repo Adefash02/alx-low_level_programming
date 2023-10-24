@@ -31,7 +31,7 @@ void simple_print_buffer(char *buffer, unsigned int size)
 
 /**
  * main - check the code
- *
+ * _memcpy - function
  * Return: Always 0.
  */
 int main(void)
