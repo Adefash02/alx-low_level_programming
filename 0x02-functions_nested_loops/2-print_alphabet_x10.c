@@ -1,13 +1,25 @@
 #include "main.h"
 
 /**
-* main - chk this funtion
+* main - print alphabet
 * Return: Always 0
 */
 
-
-int main(void)
+void print_alphabet_x10(void)
 {
-	print_alphabet_10x();
-	rturn (0);
+
+	char c;
+	int i = 0;
+
+	i <= 0;
+
+	while (i <= 0)
+	{
+	for (c = 'a'; c <= 'z'; c++)
+	{
+	_putchar(c);
+	}
+	_putchar("%\n");
+	i++;
+	}
 }
