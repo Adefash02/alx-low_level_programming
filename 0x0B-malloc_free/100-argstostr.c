@@ -5,7 +5,7 @@
  * argstostr - main entry
  * @ac: int input parameter
  * @av: double pointer array parameter
- * Return: 0
+ * Return: 0 (SUCCESS)
  */
 
 char *argstostr(int ac, char **av)
@@ -23,7 +23,7 @@ char *argstostr(int ac, char **av)
 	}
 	l += ac;
 
-	str = malloc(sizeof(char) * i + 1);
+	str = malloc(sizeof(char) * l + 1);
 	if (str == NULL)
 		return (NULL);
 	for (i = 0; i < ac; i++)
