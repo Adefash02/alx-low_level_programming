@@ -4,29 +4,27 @@
  * to integers/decimal number.
  * @b: parametr for a character pointer to a string containing the
  * binary number.
- * Return: returm converted decimal (output).
+ * Return: unsigned int with decimal value of binsry number, or 0 if error
  */
 unsigned int binary_to_unit(const char *b)
 {
-	unsigned int len, s, j, sum, pow;
-	int base;
+	int a;
+	unsigned int num;
 
-	base = 2;
-	sum = 0;
-	pow = 1;
-
-	if (b == NULL)
+	num = 0;
+	if (!b)
 		return (0);
-	for (len = 0; b[len] != '\0'; len++)
-		;
-	if (len == 1 && (b[0] == '0' || b[0] == '1')
-			return (b[0] - 48);
-			
-	for (s = 0; b[s] != '\0'; s++)
+	for (a = 0; b[a] != '\0'; a++)
 	{
-	if (b[s] != '0' && b[s] != '1')
-	return (0);
-	for (j =len - 1; j > 0;
-
+		if (b[a] != '0' && b[a] != '1')
+			return (0);
 	}
-}	
+	for (a = 0; b[a] != '\0'; a++)
+	{
+		num <<= 1;
+		if (b[a] == '1')
+			num += 1;
+	}
+	return (num);
+}
+
