@@ -2,8 +2,8 @@
 /**
  * read_textfile - the function that reads a text file and prints
  * it to the POSIX standar output.
- * filename: filename (string pointer)
- * letters: number of letters printed
+ * @filename: filename (string pointer)
+ * @letters: number of letters printed
  * Return: return number of letters printed
  */
 ssize_t read_textfile(const char *filename, size_t letters)
