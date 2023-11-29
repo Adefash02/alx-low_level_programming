@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdio.h>
 /**
  * error_file - to check if file is opened and error
  * @file_from: parameter for an initialfile to copy from and to check
