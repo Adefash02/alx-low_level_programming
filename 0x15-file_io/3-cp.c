@@ -1,12 +1,12 @@
 #include "main.h"
 /**
- * handle_error_file - to check if file is opened and handle error
+ * error_file - to check if file is opened and error
  * @file_from: parameter for an initialfile to copy from and to check
  * @file_to: parameter for the destination file to copy to
  * @argv: parameter for agument vector
  * Return: no return
  */
-void handle_error_file(int file_from, int file_to, char *argv[])
+void error_file(int file_from, int file_to, char *argv[])
 {
 	if (file_from == -1)
 	{
@@ -43,17 +43,17 @@ int main(int argc, char *argv[])
 
 	file_from = open(argv[1], O_RDONLY);
 	file_to = open(argv[2], O_CREAT | O_WRONLY | O_TRUNC | O_APPEND, 0664);
-	handle_error_file(file_from, file_to, argv);
+	error_file(file_from, file_to, argv);
 
 	nchars = 1024;
 	while (nchars == 1024)
 	{
 		nchars = read(file_from, buf, 1024);
 		if (nchars == -1)
-			handle_error_file(-1, 0, argv);
+			error_file(-1, 0, argv);
 		nwr = write(file_to, buf, 1024);
 		if (nwr == -1)
-		handle_error_file(0, -1, argv);
+		error_file(0, -1, argv);
 	}
 	err_close = close(file_from);
 	if (err_close == -1)
