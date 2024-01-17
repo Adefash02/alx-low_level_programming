@@ -1,1 +1,1 @@
-dynamic library
+dynmic
